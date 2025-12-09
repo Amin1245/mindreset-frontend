@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MindReset</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<script>
+if (!localStorage.getItem("name") || !localStorage.getItem("email")) {
+    window.location.href = "user.html";
+}
+</script>
+
+<header>
+    <a class="home-btn" href="index.html">Home</a>
+    MindReset
+</header>
+
+
+<div class="main">
+    <h1>How do you feel?</h1>
+
+    <div class="feeling-card" onclick="selectFeeling('Anxious')">
+        <h3>Anxious</h3>
+        <p>Mind racing, worried thoughts</p>
+    </div>
+
+    <div class="feeling-card" onclick="selectFeeling('Overwhelmed')">
+        <h3>Overwhelmed</h3>
+        <p>Too much to handle</p>
+    </div>
+
+    <div class="feeling-card" onclick="selectFeeling('Tired')">
+        <h3>Tired</h3>
+        <p>Low energy</p>
+    </div>
+
+    <div class="feeling-card" onclick="selectFeeling('Distracted')">
+        <h3>Distracted</h3>
+        <p>Can't focus</p>
+    </div>
+</div>
+
+<footer>© All reserved by Amin Babapour – 2025</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* Global settings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(135deg, #cbe4f7, #dff3e3, #efe2ff);
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1f2a44;
+}
+
+.home-btn {
+    position: absolute;
+    left: 25px;
+    top: 22px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #2d3e5e;
+    font-weight: 600;
+}
+
+
+/* Main container */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* Input fields */
+.input-box {
+    width: 300px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 12px;
+    border: 1px solid #777;
+    font-size: 18px;
+    background: white;
+}
+
+/* Blue button */
+button {
+    background: #427bff;
+    padding: 15px 40px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 45px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #2f63d8;
+}
+
+/* Cards for feelings */
+.feeling-card {
+    width: 380px;
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.feeling-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.feeling-card h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.feeling-card p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Circle breathing animation */
+#circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #8cb7ff, #6d8af9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: white;
+    margin-top: 30px;
+    transition: transform 0.2s linear;
+}
+
+/* Timer */
+#total-timer {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #222;
+    font-size: 15px;
+}

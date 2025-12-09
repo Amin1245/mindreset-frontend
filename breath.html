@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breathing Exercise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="home-btn">Home</a>
+    MindReset
+</header>
+
+<div id="total-timer" class="hidden">120 sec</div>
+
+<div class="main">
+
+    <h2 id="technique-title">Breathing Technique</h2>
+
+    <p id="instructions">
+        This technique helps calm your nervous system.<br><br>
+        Click "Start" when you're ready.
+    </p>
+
+    <button id="start-btn">Start Breathing</button>
+
+    <div id="breath-ui" class="hidden">
+        <div id="breath-step">Breathe In…</div>
+
+        <audio id="sound-in" src="breath_in.mp3"></audio>
+        <audio id="sound-hold" src="hold.mp3"></audio>
+        <audio id="sound-out" src="breath_out.mp3"></audio>
+
+        <div id="circle">4</div>
+
+        <button id="end-session">End Session</button>
+    </div>
+
+</div>
+
+<footer>© All reserved by Amin Babapour – 2025</footer>
+
+<script src="breath.js"></script>
+</body>
+</html>
