@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>MindReset</title>
+    <meta charset="utf-8">
+    <title>MindReset - How do you feel?</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+
 <script>
-    localStorage.clear();
+    if (!localStorage.getItem("name") || !localStorage.getItem("email")) {
+        window.location.href = "user.html";
+    }
 </script>
 
 <header>
     <a class="home-btn" href="index.html">Home</a>
     MindReset
 </header>
-
 
 <div class="main">
     <h1>How do you feel?</h1>
